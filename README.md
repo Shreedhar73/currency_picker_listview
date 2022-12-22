@@ -1,4 +1,6 @@
 # Currency picker
+The ModalBottomSheet has been replaced with ListView , so instead of calling Function showCurrencyPicker(), You can direclty Use CurrencyPicker() , as a Body element.
+
 
 [![pub package](https://img.shields.io/pub/v/currency_picker.svg)](https://pub.dev/packages/currency_picker)
 
@@ -41,8 +43,7 @@ showCurrencyPicker(
 * `showSearchField`: Option to show/hide the search TextField, default value `true` (optional).
 * `currencyFilter`: Can be used to filter the Currency list (optional).
   ```Dart
-   showCurrencyPicker(
-      context: context,
+   body: CurrencyPicker(
       onSelect: (Currency currency) {
          print('Select currency: ${currency.name}');
       },
@@ -52,7 +53,7 @@ showCurrencyPicker(
 * `favorite`: Can be used to show the favorite currencies at the top of the list (optional).
 * `theme`: Can be used to customizing the currency list bottom sheet. (optional).
   ```Dart
-   showCurrencyPicker(
+   body : CurrencyPicker(
       context: context,
       theme: CurrencyPickerThemeData(
          flagSize: 25,
