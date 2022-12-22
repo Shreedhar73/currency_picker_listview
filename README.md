@@ -23,7 +23,7 @@ A flutter package to select a currency from a list of currencies.
  ``` 
   Show currency picker using `showCurrencyPicker`:
 ```Dart
-showCurrencyPicker(
+body: CurrencyPicker(
    context: context,
    showFlag: true,
    showCurrencyName: true,
