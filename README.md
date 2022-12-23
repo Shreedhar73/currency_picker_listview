@@ -1,6 +1,6 @@
 # Currency picker
 The ModalBottomSheet has been replaced with ListView , so instead of calling Function showCurrencyPicker(), You can direclty Use CurrencyPicker() , as a Body element.
-
+SO instead of Using it as a Function, now You can Use it as Widget.
 
 [![pub package](https://img.shields.io/pub/v/currency_picker.svg)](https://pub.dev/packages/currency_picker)
 
@@ -13,7 +13,10 @@ A flutter package to select a currency from a list of currencies.
  Add the package to your pubspec.yaml:
 
  ```yaml
- currency_picker: ^2.0.13
+ currency_picker: 
+   git:
+      url: https://github.com/Shreedhar73/currency_picker_listview/
+      ref: master
  ```
  
  In your dart file, import the library:
