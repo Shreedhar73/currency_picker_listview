@@ -59,7 +59,16 @@ class _CurrencyPickerState extends State<CurrencyPicker> {
 
   @override
   Widget build(BuildContext context) {
-    return CurrencyListView(onSelect: widget.onSelect);
+    return CurrencyListView(
+      onSelect: widget.onSelect,``
+      favorite: widget.favorite,
+      currencyFilter : widget.currencyFilter,
+      searchHint: widget.searchHint,
+      showSearchField:widget.showSearchField,
+      showFlag:widget.showFlag,
+      showCurrencyName:widget.showCurrencyName,
+      showCurrencyCode:widget.showCurrencyCode
+    );
   }
 }
 // void showCurrencyPicker({
